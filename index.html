@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <title>Document</title>
+
+    <script>
+        function playRandomAudio() {
+            // Массив с путями к аудиофайлам
+            var audioFiles = [
+                "./resources/audio/Eww.mp3",
+                "./resources/audio/BrotherEww.mp3",
+                "./resources/audio/WhatsThat.mp3",
+                "./resources/audio/WhatsThatBrother.mp3"
+            ];
+
+            // Выбираем случайный индекс из массива
+            var randomIndex = Math.floor(Math.random() * audioFiles.length);
+
+            // Создаем новый объект Audio и устанавливаем источник
+            var audio = new Audio(audioFiles[randomIndex]);
+            audio.play();
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <button class="button-53" role="button" onclick="playRandomAudio()">Нажми сюда !</button>
+
+    </div>
+
+
+
+</body>
+
+</html>
